@@ -1,20 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/scanQrCodeRootView"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ScanActivity">
+    android:id="@+id/scanner_root"
+    tools:context=".BarCodeScannerActivity">
 
     <me.dm7.barcodescanner.zxing.ZXingScannerView
-        android:id="@+id/qrCodeScanner"
+        android:id="@+id/qr_scanner"
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-    </me.dm7.barcodescanner.zxing.ZXingScannerView>
+        android:layout_height="match_parent"/>
 
     <ImageView
-        android:id="@+id/flashOnOffImageView"
+        android:id="@+id/flash_icon"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentEnd="true"
@@ -33,7 +32,7 @@
         tools:ignore="UseCompoundDrawables">
 
         <ImageView
-            android:id="@+id/barcodeBackImageView"
+            android:id="@+id/go_back_icon"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:background="@drawable/back_arrow_tale_vector_icon"
@@ -46,11 +45,10 @@
             android:layout_height="match_parent"
             android:layout_marginStart="10dp"
             android:gravity="center_vertical"
-            android:text="@string/barcode_reader"
+            android:text="@string/qr_dcanner"
             android:textColor="@color/white"
             android:textStyle="bold" />
 
     </LinearLayout>
-
 
 </RelativeLayout>

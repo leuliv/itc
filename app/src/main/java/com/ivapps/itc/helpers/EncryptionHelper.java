@@ -1,4 +1,4 @@
-package com.ivapps.itc;
+package com.ivapps.itc.helpers;
 
 import android.util.Base64;
 

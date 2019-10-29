@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/nointernet_root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/failed_to_connect"
+            android:textSize="25sp"
+            android:layout_gravity="center"
+            android:textColor="@color/icons"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/failed_to_connect"
+            android:textSize="15sp"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/icons"
+            android:id="@+id/error_detail"
+            android:maxLines="5"
+            android:textStyle="italic"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/retry"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/colorAccent"
+            android:textColor="@color/icons"
+            android:layout_marginTop="15dp"
+            android:id="@+id/retry_btn"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/change_ip_in_settings"
+            android:layout_gravity="center_horizontal"
+            android:background="@color/icons"
+            android:padding="16dp"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginTop="15dp"
+            android:id="@+id/change_settings_btn"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

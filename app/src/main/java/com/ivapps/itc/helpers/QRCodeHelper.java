@@ -1,4 +1,4 @@
-package com.ivapps.itc;
+package com.ivapps.itc.helpers;
 
 import android.content.Context;
 import android.graphics.Bitmap;
